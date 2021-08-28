@@ -26,6 +26,8 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 html {
 	scroll-behavior: smooth;
+	min-width: 100vw;
+	max-width: 100vw;
 }
 
 body {
@@ -133,9 +135,11 @@ h3 {
 
 #about {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	padding: 20vh 18vw 25vh 18vw;
 }
+
 
 #plans {
 	background-color: #fef5da;
@@ -146,6 +150,7 @@ h3 {
 	flex-direction: row;
 	padding: 15vh 18vw;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .plan-item {
@@ -202,3 +207,13 @@ h3 {
 	font-size: 12px;
 	font-weight: 300;
 }
+
+@media screen and (max-width: 768px) {
+.plans-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+}
+
