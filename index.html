@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FamiBoard Product Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Gaegu:wght@700&family=Noto+Sans&family=Poppins&family=Rock+Salt&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="flex-horizontal head-space">
+        <div id="brand" class="flex-horizontal">
+            <a href="#hero"><img id="header-img" src="image/FamiBoard_logo.png"/></a>
+        </div>
+        <div>
+            <nav id="nav-bar">
+                <ul class="flex-horizontal navigation">
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#plans">Plans</a></li>
+                    <li class="nav-link"><a href="#signup">SignUp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="hero-wrap">
+            <div class="hero-content">
+                <h1>An interaction board providing the sense of presence, connectedness, and intimacy for family under remote context.</h1>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About FamiBoard</h2>
+            <iframe id="video" width="895" height="505" src="https://www.youtube.com/embed/NIW-f_AnECk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="plans">
+            <div class="flex-horizontal plans-wrap">
+                <div class="plan-item">
+                    <h3>Two Devices</h3>
+                    <img id="two" src="image/two.png"/>
+                    <p class="price">$25 per month</p>
+                </div>
+                <div class="plan-item">
+                    <h3>Three Devices</h3>
+                    <img id="three" src="image/three.png"/>
+                    <p class="price">$20 per month</p>
+                </div>
+                <div class="plan-item">
+                    <h3>More Devices</h3>
+                    <img id="more" src="image/more.png"/>
+                    <p class="price">$15 per month</p>
+                </div>
+            </div>
+        </section>
+        <section id="signup">
+            <h2>Sign up for our news letter</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email here">
+                </input>
+                <input name="submit" id="submit" type="submit" value="Sign Up"></input>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="copy-right">© All right reserved 2021 by FamiBoard</p>
+        </div>
+    </footer>
+</body>
+
+</html>
